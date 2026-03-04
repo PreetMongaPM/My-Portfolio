@@ -5,7 +5,7 @@ import AnimatedHeading from "../../ui/AnimatedHeading/AnimatedHeading";
 import SIcon from "../../ui/SIcon/SIcon";
 import { CODING_PROFILES } from "../../../constants/data";
 import "./CodingStats.css";
-import codolio from "../../../assets/images/codolio.png";
+import codolio from "../../../assets/images/Codolio.png";
 
 export default function CodingStats() {
 
