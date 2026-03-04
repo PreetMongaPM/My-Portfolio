@@ -1,16 +1,57 @@
-# React + Vite
+# Preet Monga - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 **Live:** [preetmonga.vercel.app](https://preetmonga.vercel.app)
 
-Currently, two official plugins are available:
+A dark-themed, minimal, and highly interactive single-page portfolio designed to showcase my skills, experience, and projects as a Full Stack Developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+Built with a focus on smooth animations, dynamic design, and clean architecture. The portfolio features fluid scroll reveals, a custom "magic cursor", live coding platform statistic integrations, and a responsive layout that works beautifully across all devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Dynamic Hero Section**: Interactive letter-by-letter animations and 3D photo tilt effects.
+- **Magic Cursor**: A highly custom glow-orb cursor that interacts with links and buttons.
+- **Live Coding Stats**: Integrates and displays statistics from platforms like GitHub, LeetCode, Codeforces, and Codolio.
+- **Scroll Animations**: Elements gracefully reveal themselves as you scroll down the page.
+- **Project Showcase**: Clean cards detailing project descriptions, tech stacks, and quick links to repositories and live deployments.
+- **Interactive Resume**: Direct download access paired with high-level background highlights.
+- **Contact Hub**: Easy-to-use mail-to links with direct copy-to-clipboard functionality.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Framework**: React.js
+- **Styling**: Vanilla CSS (CSS Variables for theming, custom keyframe animations)
+- **Icons**: Lucide React & Simple Icons
+- **Analytics**: Vercel Analytics
+- **Deployment**: Vercel
+
+## Local Development
+
+To run this project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/preetmongapm/pm-portfolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd pm-portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Connect
+
+- [GitHub](https://github.com/preetmongapm)
+- [LinkedIn](https://linkedin.com/in/preetmongapm)
+- [Email](mailto:preetmongapm1@gmail.com)
+
+---
+*Built with React, CSS, and ♥.*
