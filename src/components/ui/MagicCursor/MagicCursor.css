@@ -1,0 +1,39 @@
+.magic-cursor-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9998;
+}
+
+.magic-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent), 0 0 16px var(--accent-glow);
+  transition: opacity 0.2s;
+  will-change: transform;
+}
+
+.magic-cursor-orb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9997;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent-border);
+  background: radial-gradient(circle, var(--accent-dim) 0%, transparent 70%);
+  box-shadow: 0 0 20px rgba(52,211,153,0.15), inset 0 0 12px rgba(52,211,153,0.05);
+  opacity: 0.35;
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+  will-change: transform;
+}

@@ -1,4 +1,3 @@
-// ─── Portfolio Data ─────────────────────────────────────────────────────
 export const NAV_LINKS = [
   "About",
   "Skills",
@@ -10,33 +9,29 @@ export const NAV_LINKS = [
   "Contact",
 ];
 
-// ─── Personal ────────────────────────────────────────────────────────────────
 export const PERSONAL = {
   name: { first: "Preet", last: "Monga" },
   title: "Full Stack Developer",
   tagline:
-    "I craft precise, performant interfaces people love using. 6 years shipping production software at Stripe, Notion, and Vercel.",
+    "Building reliable web applications and continuously leveling up as a full-stack engineer..",
   email: "preetmongapm1@gmail.com",
   status: "Available for hire",
-  resumeUrl: "/PreetMonga_Resume.pdf", // put your PDF in /public
+  resumeUrl: "/Preet_Monga_Resume.pdf",
   socials: {
     github: "https://github.com/preetmongapm",
     linkedin: "https://linkedin.com/in/preetmongapm",
-    twitter: "https://twitter.com/preetmongapm",
   },
 };
 
-// ─── Coding Profiles ─────────────────────────────────────────────────────────
-// Replace usernames with your own. Set to null to hide a platform.
 export const CODING_PROFILES = {
   codolio: "preetmongapm",
   github: "preetmongapm",
   leetcode: "preetmongapm",
-  codeforces: "",
-  codechef: "preet__monga",
+  codeforces: "preetmongapm",
+  codechef: "preet_monga",
+  geeksforgeeks: "preet_monga_pm",
 };
 
-// ─── Skills ──────────────────────────────────────────────────────────────────
 export const SKILLS = {
   Languages: [
     { name: "JavaScript", icon: "javascript", color: "#F7DF1E" },
@@ -58,56 +53,41 @@ export const SKILLS = {
     { name: "Docker", icon: "docker", color: "#2496ED" },
     { name: "MongoDB", icon: "mongodb", color: "#47A248" },
     { name: "Supabase", icon: "supabase", color: "#3ECF8E" },
+    { name: "Postman", icon: "postman", color: "#FF6C37" },
   ],
 };
 
-// ─── Experience ───────────────────────────────────────────────────────────────
 export const EXPERIENCE = [
   {
-    role: "Full Stack Intern",
+    role: "SDE Intern (MERN Stack)",
     company: "Clerisy Solutions",
     period: "Dec 2025— Present",
     bullets: [
-      "Led redesign of dashboard UI serving 2M+ merchants, reducing task completion time by 34%.",
-      "Built component library adopted across 6 product teams, eliminating design inconsistencies.",
-      "Mentored 4 junior engineers and introduced team-wide TypeScript migration.",
+      "Building production features for a pharma research platform using React, Node.js, and REST APIs.",
+      "Integrated EPAM Ketcher for chemical structure editing within a scalable React architecture.",
+      "Developed reusable components and maintained stable backend integrations in a modular codebase.",
+      "Worked with Docker, Git, and Postman to ensure consistent development and deployment workflows.",
     ],
   },
 ];
 
-// ─── Projects ────────────────────────────────────────────────────────────────
 export const PROJECTS = [
   {
-    title: "Synthr",
-    desc: "AI-powered design-to-code tool that converts Figma frames into production React components with 90% accuracy.",
-    stack: ["React", "OpenAI", "Node.js", "PostgreSQL"],
-    liveUrl: "#",
-    repoUrl: "#",
+    title: "Web App",
+    desc: "Built a real-time weather forecasting platform with optimized API integration and a clean, responsive UI.",
+    stack: ["JavaScript", "HTML", "CSS", "REST API"],
+    liveUrl: "https://weather-app-preet-monga.netlify.app/",
+    repoUrl: "https://github.com/PreetMongaPM/WeatherApp",
   },
   {
-    title: "Pulse Dashboard",
-    desc: "Real-time analytics dashboard for SaaS metrics with 50+ chart types, dark mode, and CSV export.",
-    stack: ["Next.js", "D3.js", "WebSockets", "Redis"],
-    liveUrl: "#",
-    repoUrl: "#",
-  },
-  {
-    title: "Vaultify",
-    desc: "End-to-end encrypted password manager with biometric auth and cross-device sync.",
-    stack: ["React Native", "AES-256", "Supabase"],
-    liveUrl: "#",
-    repoUrl: "#",
-  },
-  {
-    title: "Threadline",
-    desc: "Minimalist writing app that turns Twitter threads into long-form blog posts using LLMs.",
-    stack: ["Next.js", "Anthropic API", "Prisma"],
-    liveUrl: "#",
-    repoUrl: "#",
+    title: "More Projects coming very soon",
+    desc: "",
+    stack: [],
+    liveUrl: "",
+    repoUrl: "https://github.com/preetmongapm",
   },
 ];
 
-// ─── Education ────────────────────────────────────────────────────────────────
 export const EDUCATION = [
   {
     degree: "B.E. Computer Science with DevOps",
@@ -123,12 +103,9 @@ export const EDUCATION = [
   },
 ];
 
-// ─── Resume Highlights ────────────────────────────────────────────────────────
 export const RESUME_HIGHLIGHTS = [
   { label: "Contest Rating - Top 7% Leetcode Worldwide", value: "1798" },
   { label: "DSA Questions", value: "1000+" },
-  { label: "Projects Shipped", value: "40+" },
-  { label: "Engineers Mentored", value: "8" },
 ];
 
-export const RESUME_BIO = `Senior frontend engineer with 6 years of experience building high-scale products at Stripe, Notion, and Vercel. Specialized in React ecosystems, design systems, and performance optimization. Passionate about developer experience and building tools that multiply team output.`;
+export const RESUME_BIO = `Backend / MERN-focused Software Engineer with strong foundations in Data Structures, System Design fundamentals, and scalable web architecture. Experienced in building production-ready applications using Node.js, React, and REST APIs, with hands-on exposure to Docker, authentication systems, and performance-focused development. Passionate about solving complex problems and building reliable systems.`;

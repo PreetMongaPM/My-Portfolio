@@ -1,0 +1,105 @@
+.experience-section {
+  padding: 70px 2.5rem;
+}
+
+.experience-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.experience-list {
+  margin-top: 56px;
+}
+
+.experience-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 48px;
+  padding: 36px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.experience-row.last {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 50px 1.25rem;
+  }
+  .experience-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 28px 0;
+  }
+  .experience-list {
+    margin-top: 36px;
+  }
+  .experience-role {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-section {
+    padding: 40px 1rem;
+  }
+  .experience-bullet-text {
+    font-size: 13px;
+  }
+}
+
+
+.experience-period {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: rgba(255,255,255,0.25);
+  margin: 0 0 8px;
+  letter-spacing: 0.05em;
+}
+
+.experience-company {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--accent);
+  margin: 0;
+}
+
+.experience-role {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-primary);
+  margin: 0 0 18px;
+  letter-spacing: -0.015em;
+}
+
+.experience-bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.experience-bullet-icon {
+  color: var(--accent);
+  margin-top: 7px;
+  font-size: 5px;
+  flex-shrink: 0;
+}
+
+.experience-bullet-text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: rgba(255,255,255,0.42);
+  line-height: 1.78;
+}

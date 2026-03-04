@@ -1,0 +1,21 @@
+.animated-heading {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(30px, 4vw, 46px);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.animated-heading-word {
+  display: inline-block;
+  margin-right: 0.28em;
+}
+
+.animated-heading-word.highlight {
+  color: var(--accent);
+}
+
+.animated-heading-word.default {
+  color: var(--text-primary);
+}

@@ -1,110 +1,54 @@
-# Portfolio
+# Preet Monga - Personal Portfolio
 
-Dark, minimal one-page portfolio built with React + Tailwind CSS.
+A dark-themed, minimal, and highly interactive single-page portfolio designed to showcase my skills, experience, and projects as a Full Stack Developer.
 
-## Quick Start
+## Overview
 
-```bash
-npx create-react-app my-portfolio
-cd my-portfolio
+Built with a focus on smooth animations, dynamic design, and clean architecture. The portfolio features fluid scroll reveals, a custom "magic cursor", live coding platform statistic integrations, and a responsive layout that works beautifully across all devices.
 
-# Copy the src/ folder contents into your project
-# Install dependencies
-npm install lucide-react
-npm start
-```
+## Features
 
-## File Structure
+- **Dynamic Hero Section**: Interactive letter-by-letter animations and 3D photo tilt effects.
+- **Magic Cursor**: A highly custom glow-orb cursor that interacts with links and buttons.
+- **Live Coding Stats**: Integrates and displays statistics from platforms like GitHub, LeetCode, Codeforces, and Codolio.
+- **Scroll Animations**: Elements gracefully reveal themselves as you scroll down the page.
+- **Project Showcase**: Clean cards detailing project descriptions, tech stacks, and quick links to repositories and live deployments.
+- **Interactive Resume**: Direct download access paired with high-level background highlights.
+- **Contact Hub**: Easy-to-use mail-to links with direct copy-to-clipboard functionality.
 
-```
-src/
-├── constants/
-│   ├── theme.js          ← All colors, fonts, spacing tokens
-│   └── data.js           ← Your personal info, skills, projects, etc.
-│
-├── hooks/
-│   ├── useScrollReveal.js    ← Fires when element enters viewport
-│   └── useActiveSection.js   ← Tracks which section is visible (for navbar)
-│
-├── components/
-│   ├── ui/
-│   │   ├── MagicCursor.jsx   ← Custom cursor: dot + glowing orb + sparkles
-│   │   ├── PhotoCard.jsx     ← 3D tilt hero photo with hover effects
-│   │   ├── Reveal.jsx        ← Scroll-triggered animation wrapper
-│   │   ├── AnimatedHeading.jsx  ← Word-by-word section headings
-│   │   ├── SectionLabel.jsx  ← "02 — Skills" labels
-│   │   ├── SIcon.jsx         ← Simple Icons brand logos
-│   │   └── Grain.jsx         ← Film grain texture overlay
-│   │
-│   ├── layout/
-│   │   └── NavBar.jsx        ← Sticky nav with blur + active link
-│   │
-│   └── sections/
-│       ├── Hero.jsx          ← Intro, photo, CTAs
-│       ├── Skills.jsx        ← Tech stack with brand icons
-│       ├── CodingStats.jsx   ← Codolio, GitHub, LeetCode, Codeforces
-│       ├── Resume.jsx        ← Stats + PDF preview + download
-│       ├── Experience.jsx    ← Work history timeline
-│       ├── Projects.jsx      ← Featured project cards
-│       ├── Education.jsx     ← Degrees + certifications
-│       └── Contact.jsx       ← Email + socials + footer
-│
-├── App.jsx     ← Root: wires all sections together
-└── index.css   ← Fonts, cursor reset, keyframe animations
-```
+## Tech Stack
 
-## Personalizing
+- **Framework**: React.js
+- **Styling**: Vanilla CSS (CSS Variables for theming, custom keyframe animations)
+- **Icons**: Lucide React & Simple Icons
+- **Deployment**: Configured for scalable and quick deployments (e.g., Vercel, Netlify)
 
-### 1. Your Info
-Edit **`src/constants/data.js`** — replace everything with your real info:
-- `PERSONAL` — name, title, tagline, email, social links
-- `CODING_PROFILES` — your usernames on each coding platform
-- `SKILLS`, `EXPERIENCE`, `PROJECTS`, `EDUCATION`
+## Local Development
 
-### 2. Your Photo
-In `src/components/sections/Hero.jsx`, find:
-```jsx
-<PhotoCard imageSrc={null} />
-```
-Change to:
-```jsx
-<PhotoCard imageSrc="/your-photo.jpg" />
-```
-Place the photo in `/public/your-photo.jpg`.
+To run this project locally:
 
-### 3. Theme Color
-Open `src/constants/theme.js` and change `ACCENT`:
-```js
-export const ACCENT = "#34d399";  // emerald (current)
-// Try: "#38bdf8" (sky blue), "#a78bfa" (violet), "#fb7185" (rose)
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/preetmongapm/pm-portfolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd pm-portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-### 4. Codolio / Coding Stats
-In `src/constants/data.js`:
-```js
-export const CODING_PROFILES = {
-  codolio:    "your-username",
-  github:     "your-username",
-  leetcode:   "your-username",
-  codeforces: "your-username",
-};
-```
-The section auto-fetches live Codeforces data and renders GitHub/LeetCode stats cards.
+## Connect
 
-### 5. Resume PDF
-Place your resume at `public/JohnDoe_Resume.pdf` and update `PERSONAL.resumeUrl` in `data.js`.
+- [GitHub](https://github.com/preetmongapm)
+- [LinkedIn](https://linkedin.com/in/preetmongapm)
+- [Email](mailto:preetmongapm1@gmail.com)
 
-### 6. Add / Remove Sections
-In `src/App.jsx`, simply add or remove section components and update `NAV_LINKS` in `data.js`.
-
-## Design Tokens (theme.js)
-
-| Token | Value | Use |
-|---|---|---|
-| `ACCENT` | `#34d399` | Emerald — all highlights |
-| `BG` | `#080808` | Page background |
-| `SURFACE` | `rgba(255,255,255,0.02)` | Card backgrounds |
-| `BORDER` | `rgba(255,255,255,0.07)` | Card borders |
-| `FONT_DISPLAY` | Syne | Headings |
-| `FONT_BODY` | DM Sans | Body text |
-| `EASE_SPRING` | `cubic-bezier(0.16,1,0.3,1)` | Springy animations |
+---
+*Built with React, CSS, and ♥.*
