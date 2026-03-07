@@ -102,7 +102,7 @@ function CodolioCard({ username }) {
 }
 
 function LeetCodeCard({ username }) {
-  const cardUrl = `https://leetcard.jacoblin.cool/${username}?ext=heatmap`;
+  const cardUrl = `https://leetcard.jacoblin.cool/${username}?theme=dark&ext=heatmap`;
 
   return (
     <StatCard>

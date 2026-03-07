@@ -9,6 +9,7 @@ import NavBar from "./components/layout/NavBar/NavBar";
 import Hero from "./components/sections/Hero/Hero";
 import Skills from "./components/sections/Skills/Skills";
 import CodingStats from "./components/sections/CodingStats/CodingStats";
+import GitHubStats from "./components/sections/GitHubStats/GitHubStats";
 import Resume from "./components/sections/Resume/Resume";
 import Experience from "./components/sections/Experience/Experience";
 import Projects from "./components/sections/Projects/Projects";
@@ -39,6 +40,7 @@ export default function App() {
           <Hero />
           <Skills />
           <CodingStats />
+          <GitHubStats />
           <Resume />
           <Experience />
           <Projects />
