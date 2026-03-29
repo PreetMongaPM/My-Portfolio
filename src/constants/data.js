@@ -60,14 +60,27 @@ export const SKILLS = {
 
 export const EXPERIENCE = [
   {
+    role: "Software Engineer (MERN Stack)",
+    company: "Clerisy Solutions",
+    period: "March 2026— Present",
+    bullets: [
+      "Promoted from MERN Stack Trainee to Software Engineer based on performance and consistent contributions.",
+      "Build and deliver features for a pharma research platform with complex workflows using React",
+      "Integrated Ketcher (EPAM) for chemical structure editing within a scalable React architecture.",
+      "Integrated and optimized Mol* (MolStar) for 3D molecular visualization",
+      "Develop backend services using Node.js and Express.",
+      "Design and consume REST APIs with a focus on scalability and clean architecture.",
+      "Work with Docker, Git, and Postman to ensure consistent development and deployment workflows.",
+    ],
+  },
+  {
     role: "SDE Intern (MERN Stack)",
     company: "Clerisy Solutions",
-    period: "Dec 2025— Present",
+    period: "Dec 2025— March 2026",
     bullets: [
-      "Building production features for a pharma research platform using React, Node.js, and REST APIs.",
-      "Integrated EPAM Ketcher for chemical structure editing within a scalable React architecture.",
+      "Contributed to a production-scale MERN codebase, building features and fixing bugs.",
+      "Developed REST APIs and React components in a full-stack environment.",
       "Developed reusable components and maintained stable backend integrations in a modular codebase.",
-      "Worked with Docker, Git, and Postman to ensure consistent development and deployment workflows.",
     ],
   },
 ];
