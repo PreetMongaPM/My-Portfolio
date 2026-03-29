@@ -2,13 +2,17 @@ import { Download, FileText } from "lucide-react";
 import Reveal from "../../ui/Reveal/Reveal";
 import SectionLabel from "../../ui/SectionLabel/SectionLabel";
 import AnimatedHeading from "../../ui/AnimatedHeading/AnimatedHeading";
-import { RESUME_HIGHLIGHTS, RESUME_BIO, PERSONAL } from "../../../constants/data";
+import {
+  RESUME_HIGHLIGHTS,
+  RESUME_BIO,
+  PERSONAL,
+} from "../../../constants/data";
 import "./Resume.css";
 
 export default function Resume() {
   const handleDownload = () => {
-    const link    = document.createElement("a");
-    link.href     = PERSONAL.resumeUrl;
+    const link = document.createElement("a");
+    link.href = PERSONAL.resumeUrl;
     link.download = "Preet_Monga_Resume.pdf";
     link.click();
   };
@@ -57,14 +61,14 @@ function StatHighlight({ item }) {
 
 const MOCK_PDF_LINES = [
   { w: "55%", h: 11, mb: 18, accent: false, op: 0.22 },
-  { w: "38%", h: 7,  mb: 26, accent: false, op: 0.12 },
-  { w: "44%", h: 7,  mb: 8,  accent: true,  op: 0.5  },
-  { w: "90%", h: 5,  mb: 5,  accent: false, op: 0.09 },
-  { w: "80%", h: 5,  mb: 5,  accent: false, op: 0.09 },
-  { w: "74%", h: 5,  mb: 22, accent: false, op: 0.09 },
-  { w: "42%", h: 7,  mb: 8,  accent: true,  op: 0.45 },
-  { w: "88%", h: 5,  mb: 5,  accent: false, op: 0.07 },
-  { w: "68%", h: 5,  mb: 0,  accent: false, op: 0.07 },
+  { w: "38%", h: 7, mb: 26, accent: false, op: 0.12 },
+  { w: "44%", h: 7, mb: 8, accent: true, op: 0.5 },
+  { w: "90%", h: 5, mb: 5, accent: false, op: 0.09 },
+  { w: "80%", h: 5, mb: 5, accent: false, op: 0.09 },
+  { w: "74%", h: 5, mb: 22, accent: false, op: 0.09 },
+  { w: "42%", h: 7, mb: 8, accent: true, op: 0.45 },
+  { w: "88%", h: 5, mb: 5, accent: false, op: 0.07 },
+  { w: "68%", h: 5, mb: 0, accent: false, op: 0.07 },
 ];
 
 function PdfPreviewCard({ onDownload }) {
@@ -76,14 +80,27 @@ function PdfPreviewCard({ onDownload }) {
           <span className="pdf-header-text">Preet_Monga_Resume.pdf</span>
         </div>
         {MOCK_PDF_LINES.map((line, i) => (
-          <div key={i} style={{ width: line.w, height: line.h, background: line.accent ? `rgba(52,211,153,${line.op})` : `rgba(255,255,255,${line.op})`, borderRadius: 3, marginBottom: line.mb }} />
+          <div
+            key={i}
+            style={{
+              width: line.w,
+              height: line.h,
+              background: line.accent
+                ? `rgba(52,211,153,${line.op})`
+                : `rgba(255,255,255,${line.op})`,
+              borderRadius: 3,
+              marginBottom: line.mb,
+            }}
+          />
         ))}
-        <div className="pdf-backdrop-icon"><FileText size={60} color="var(--accent)" /></div>
+        <div className="pdf-backdrop-icon">
+          <FileText size={60} color="var(--accent)" />
+        </div>
       </div>
 
       <div className="pdf-download-area">
         <p className="pdf-title">Preet Monga — Resume</p>
-        <p className="pdf-meta">Updated Feb 2026 · PDF · 1 page</p>
+        <p className="pdf-meta">Updated April 2026 · PDF · 1 page</p>
         <button
           onClick={onDownload}
           data-interactive
