@@ -87,18 +87,18 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
+    title: "Trackify",
+    desc: "Built a full-stack SaaS admin dashboard using React, Node.js, Express, and MongoDB with JWT authentication and RBAC. Enabled real-time updates using WebSockets.",
+    stack: ["React", "Redux Toolkit", "Node.js", "Express", "MongoDB", "Socket.io", "Recharts"],
+    liveUrl: "https://trackifypm.vercel.app",
+    repoUrl: "https://github.com/preetmongapm/trackify",
+  },
+  {
     title: "Web App",
     desc: "Built a real-time weather forecasting platform with optimized API integration and a clean, responsive UI.",
     stack: ["JavaScript", "HTML", "CSS", "REST API"],
     liveUrl: "https://weather-app-preet-monga.netlify.app/",
     repoUrl: "https://github.com/PreetMongaPM/WeatherApp",
-  },
-  {
-    title: "More Projects coming very soon",
-    desc: "",
-    stack: [],
-    liveUrl: "",
-    repoUrl: "https://github.com/preetmongapm",
   },
 ];
 
@@ -118,8 +118,8 @@ export const EDUCATION = [
 ];
 
 export const RESUME_HIGHLIGHTS = [
-  { label: "Contest Rating - Top 7% Leetcode Worldwide", value: "1798" },
-  { label: "DSA Questions", value: "1000+" },
+  { label: "Contest Rating - Top 7% Leetcode Worldwide", value: "1805" },
+  { label: "DSA Questions", value: "1100+" },
 ];
 
 export const RESUME_BIO = `Backend / MERN-focused Software Engineer with strong foundations in Data Structures, System Design fundamentals, and scalable web architecture. Experienced in building production-ready applications using Node.js, React, and REST APIs, with hands-on exposure to Docker, authentication systems, and performance-focused development. Passionate about solving complex problems and building reliable systems.`;
